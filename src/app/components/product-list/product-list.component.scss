@@ -1,0 +1,18 @@
+.container {
+  overflow: auto;
+  margin-bottom: 20px;
+}
+.pointer {
+  cursor: pointer;
+}
+.button-fab {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 50px;
+}
+
+.mat-column-edit,
+.mat-column-delete {
+  flex: 0 0 100px;
+}

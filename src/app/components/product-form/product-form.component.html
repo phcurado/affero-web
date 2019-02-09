@@ -1,0 +1,33 @@
+<h2 mat-dialog-title>Produto</h2>
+<mat-dialog-content class="relative">
+  <form #productForm="ngForm" class="product-form">
+    <mat-form-field>
+      <input
+        name="name"
+        required
+        matInput
+        placeholder="nome"
+        [(ngModel)]="product.name"
+      />
+    </mat-form-field>
+
+    <mat-form-field>
+      <input
+        name="quantity"
+        required
+        matInput
+        placeholder="quantidade"
+        [(ngModel)]="product.quantity"
+      />
+    </mat-form-field>
+    <button
+      mat-raised-button
+      type="submit"
+      (click)="confirmProduct()"
+      color="primary"
+      class="button-modal"
+    >
+      Confirmar edição
+    </button>
+  </form>
+</mat-dialog-content>
